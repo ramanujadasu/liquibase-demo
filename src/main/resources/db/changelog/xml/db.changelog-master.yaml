@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/create-company-and-employee-schema.xml
+  - include:
+      file: db/changelog/insert-employee-data.xml
+  - include:
+      file: db/changelog/insert-company-data.xml
+  - include:
+      file: db/changelog/insert-employee-data2.xml
+  - include:
+      file: db/changelog/insert-company-data2.xml
+  - include:
+      file: db/changelog/update-employee-table-precondition.xml

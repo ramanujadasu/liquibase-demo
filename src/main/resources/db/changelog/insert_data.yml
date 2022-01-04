@@ -1,0 +1,29 @@
+databaseChangeLog:
+
+  - preConditions:
+        - runningAs:
+            username: root
+        - or:
+            - dbms:
+                type: mysql
+ 
+  - changeSet:
+        id: 1
+        author: dasu
+        comment: "Inserting employee_yml records"
+        changes:
+            - insert:
+                tableName: employee_yml
+                columns:
+                    - column:
+                        name: id
+                        valueNumeric: 1
+                    - column:
+                        name: name
+                        value: techgeeknext_company_01
+                    - column:
+                        name: age
+                        valueNumeric: 13
+                    - column:
+                        name: address
+                        value: Bangalore

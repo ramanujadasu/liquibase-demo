@@ -1,0 +1,37 @@
+databaseChangeLog:
+
+    - changeSet:
+        id: 1
+        author: dasu
+        comment: "Some comments go here"
+        changes:
+            - createTable:
+                tableName: employee_yml
+                columns:
+                    - column:
+                        name: id
+                        type: int
+                        constraints:
+                            primaryKey: true
+                            nullable: false
+                    - column:
+                        name: name
+                        type: varchar(255)
+                        constraints:
+                            nullable: false
+                    - column:
+                        name: age
+                        type: int
+
+    - changeSet:
+        id: 2
+        author: dasu
+        comment: "adding the column"
+        changes:
+            - addColumn:
+                tableName: employee_yml
+                columns:
+                    - column:
+                        name: address
+                        type: varchar(255)
+

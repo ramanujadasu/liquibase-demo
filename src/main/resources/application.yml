@@ -7,6 +7,9 @@ spring:
     url: jdbc:mysql://localhost:3306/liquibase_demo?createDatabaseIfNotExist=true&useSSL=false&allowMultiQueries=true
     username: root
     password: R@kuten@250987
+    #url: http://localhost:5984
+    #username: admin
+    #password: admin
     #driver-class-name: com.mysql.jdbc.Driver
     
 #  jpa:
